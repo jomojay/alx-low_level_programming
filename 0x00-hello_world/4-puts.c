@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * This program just prints a given input
+ * main - Entry point
  *
- * Returns: 0(successful)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {

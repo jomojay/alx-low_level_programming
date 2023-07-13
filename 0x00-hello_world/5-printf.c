@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * This program prints  a given input using printf
+ * main - Entry point
  *
- * Returns: 0(successful)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {

@@ -7,7 +7,6 @@
  * 
  * Return: Result of addition (res)
  */
-
 int add(int a, int b)
 {
 	int res;

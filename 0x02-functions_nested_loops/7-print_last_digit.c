@@ -6,21 +6,19 @@
  *
  * Return: Last didgit of a given number
  */
-int print_last_digit(int n)
+int print_last_digit(int r)
 {
-	int abs, res;
-
-	if (n < 0)
+	if (r < 0)
 	{
-		abs = ((-1) * n);
-		res = (abs % 10);
-		_putchar (res + '0');
-		return (res);
+		r = (-1 * (r % 10));
+		_putchar(r + '0');
+		return (r);
 	}
+
 	else
 	{
-		res = (n % 10);
-		_putchar (res + '0');
-		return (res);
+		r = (r % 10);
+		_putchar(r + '0');
+		return (r);
 	}
 }

@@ -5,30 +5,31 @@
  * @n: input integer.
  * Return: no return.
  */
-
 void print_number(int n)
 {
-	int temp, div;
+	unsigned int m, d, count;
 
 	if (n < 0)
 	{
-		_putchar('-');
-		n = -n;
+		_putchar(45);
+		m = n * -1;
 	}
 	else
-		temp = n;
-	temp = n;
-	div = 1;
-
-	while (temp > 9)
 	{
-		temp /= 10;
-		div *= 10;
+		m = n;
 	}
-	while (div > 0)
+
+	d = m;
+	count = 1;
+
+	while (d > 9)
 	{
-		_putchar('0' + (n / div));
-		n %= div;
-		div /= 10;
+		d /= 10;
+		count *= 10;
+	}
+
+	for (; count >= 1; count /= 10)
+	{
+		_putchar(((m / count) % 10) + 48);
 	}
 }

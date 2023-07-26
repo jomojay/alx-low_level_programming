@@ -20,7 +20,7 @@ void print_number(int n)
 	temp = n;
 	div = 1;
 
-	while(temp > 9)
+	while (temp > 9)
 	{
 		temp /= 10;
 		div *= 10;

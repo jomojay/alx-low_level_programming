@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strncat - concatenates two strings up to n number of given bytes of src pointer content
+ * _strncat - concatenates two strings up to n number of given bytes
  * @dest: pointer to destination string
  * @src: pointer to source string
  * @n: number of bytes to be used in src pointer
@@ -17,11 +17,11 @@ char *_strncat(char *dest, char *src, int n)
 		i++;
 	}
 	while ((n > j) && src[j] != '\0')
-		{
-			dest[i] = src[j];
-			i++;
-			j++;
-		}
+	{
+		dest[i] = src[j];
+		i++;
+		j++;
+	}
 	dest[i] = '\0';
 	return (dest);
 }

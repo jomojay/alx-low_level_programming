@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * _strstr - searches a string for any of a set of bytes
@@ -10,7 +9,7 @@
 char *_strstr(char *haystack, char *needle)
 {
 	unsigned int i = 0, j, flag;
-	char *tmp = NULL;
+	char *tmp = 0;
 
 	while (haystack[i] != '\0')
 	{
@@ -20,7 +19,7 @@ char *_strstr(char *haystack, char *needle)
 		{
 			if (haystack[i + j] == needle[j])
 			{
-				if (tmp == NULL)
+				if (tmp == 0)
 				{
 					tmp = (haystack + i);
 					flag = 1;
@@ -39,5 +38,5 @@ char *_strstr(char *haystack, char *needle)
 			return (tmp);
 		i++;
 	}
-	return (NULL);
+	return (0);
 }

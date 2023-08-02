@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * square_root - determines the square root of
+ * is_square_root - determines the square root of
  * @num: num to find its square root
  * @fac: stating factor
  * Return: returns fac if successful or -1 if not

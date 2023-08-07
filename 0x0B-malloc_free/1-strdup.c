@@ -5,13 +5,16 @@
 /**
  * _strdup - returns a pointer to a newly allocated space in memory
  * @str: pointer to the string to be copied
- * 
+ *
  * Return: Returns pointer (success) or NULL
  */
 char *_strdup(char *str)
 {
 	char *ptr;
 	unsigned int j, i = 0;
+
+	if (str == NULL)
+		return (NULL);
 
 	while (str[i] != '\0')
 	{

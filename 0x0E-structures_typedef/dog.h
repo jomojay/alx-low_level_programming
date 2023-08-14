@@ -9,13 +9,15 @@
  *
  * Description: It generates a struct object with 3 attributes
  */
-typedef struct dog dog_t;
+
 struct dog
 {
 	char *name;
 	float age;
 	char *owner;
 };
+
+typedef struct dog dog_t;
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
 dog_t *new_dog(char *name, float age, char *owner);

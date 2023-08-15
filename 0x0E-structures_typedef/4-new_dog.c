@@ -2,8 +2,8 @@
 #include <stdlib.h>
 
 /**
- * _strcpy - copys a string  
- * @str: pointer to the string to be copied 
+ * _strcpy - copys a string
+ * @str: pointer to the string to be copied
  * Return: Always 0
  */
 char *_strcpy(char *str)
@@ -38,7 +38,7 @@ char *_strcpy(char *str)
  * @name: initial name of dog
  * @age: initial dog age
  * @owner: initial dog owner
- * Return: Return a pointer to the new_dog 
+ * Return: Return a pointer to the new_dog
  */
 
 dog_t *new_dog(char *name, float age, char *owner)

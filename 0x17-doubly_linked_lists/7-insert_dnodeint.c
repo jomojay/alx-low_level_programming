@@ -2,7 +2,7 @@
 
 /**
  * insert_dnodeint_at_index - insert node at an index in a list
- * @head: pointer to the head node
+ * @h: pointer to the head node
  * @idx: position to insert a new node
  * @n: new node data
  * Return: Returns ptr to the new node or NULL(fails)
